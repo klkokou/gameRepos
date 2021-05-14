@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - hitable
+  - hitable1
+  - hitable2
+  - hitable3
+  - hitable4
+  - hitable5
+  - hitable6
+  - hitable7
+  - hitable8
+  - hitable9
+  - hitable10
+  - hitable11
+  - enemy
+  - attackkkk
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - flyingBirds
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 570212835
+    locked: 0
+  - name: Bins
+    uniqueID: 3734961611
+    locked: 0
