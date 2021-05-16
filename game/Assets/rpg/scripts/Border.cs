@@ -25,3 +25,28 @@ public class Border : MonoBehaviour
         transform.position = new Vector3(Mathf.Clamp(pos.x, leftBorder, rightBorder), Mathf.Clamp(pos.y, bottomBorder, topBorder), pos.z);
     }
 }
+//private void ChangeAnim(Vector2 direction)
+//{
+//    //if(Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+//    //{
+//    //    if(direction.x > 0)
+//    //    {
+//    //        SetAnimFloat(Vector2.right);
+//    //    }
+//    //    else if (direction.x < 0)
+//    //    {
+//    //        SetAnimFloat(Vector2.left);
+//    //    }
+//    //}
+//    //else if (Mathf.Abs(direction.x) < Mathf.Abs(direction.y))
+//    //{
+//    //    if(direction.y > 0)
+//    //    {
+//    //        SetAnimFloat(Vector2.right);
+//    //    }
+//    //    else if (direction.y < 0)
+//    //    {
+//    //        SetAnimFloat(Vector2.left);
+//    //    }
+//    //}
+//}

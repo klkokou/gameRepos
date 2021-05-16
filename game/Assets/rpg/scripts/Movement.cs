@@ -64,6 +64,7 @@ public class Movement : MonoBehaviour
             animator.SetBool("moving", false);
         }
     }
+
     void MoveCharacter()
     {
         change.Normalize();

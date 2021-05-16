@@ -18,6 +18,7 @@ TagManager:
   - hitable11
   - enemy
   - attackkkk
+  - forLitter
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - 
   - flyingBirds
   - Player
-  - 
+  - rubbish
   - 
   - 
   - 

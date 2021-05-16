@@ -6,7 +6,8 @@ public enum EnemyState
 {
     idle, 
     flying,
-    pecking
+    pecking,
+    throwingLetter
 }
 
 public class Crow : MonoBehaviour

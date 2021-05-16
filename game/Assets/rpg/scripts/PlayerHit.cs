@@ -6,31 +6,21 @@ public class PlayerHit : MonoBehaviour
 {
     public float thrust;
     public float knockTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   // public float damage;
 
     private void OnTriggerEnter2d(Collider2D other)
     {
         if (other.gameObject.CompareTag("enemy"))
         {
-            Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if (enemy != null)
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+            if (hit != null)
             {
-                enemy.isKinematic = false;
-                Vector2 dif = enemy.transform.position - transform.position;
+                hit.isKinematic = false;
+                Vector2 dif = hit.transform.position - transform.position;
                 dif = dif.normalized * thrust;
-                enemy.AddForce(dif, ForceMode2D.Impulse);
-                enemy.isKinematic = true;
-                StartCoroutine(KnockCo(enemy));
+                hit.AddForce(dif, ForceMode2D.Impulse);
+                hit.isKinematic = true;
+                StartCoroutine(KnockCo(hit));
             }
 
         }
@@ -42,8 +32,8 @@ public class PlayerHit : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             enemy.velocity = Vector2.zero;
-            //enemy.isKinematic = true;
-            enemy.GetComponent<Crow>().currentState = EnemyState.idle;
+            enemy.isKinematic = true;
+            //enemy.GetComponent<Crow>().currentState = EnemyState.idle;
         }
     }
 }
